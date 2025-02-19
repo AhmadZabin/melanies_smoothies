@@ -46,7 +46,7 @@ if ingredients_list:  # this will remove the brackets
             values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
 
     smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-    st.text(smoothiefroot_response)
+    st.text(smoothiefroot_response.jason())
 
     #st.write(my_insert_stmt)
     #st.stop()
